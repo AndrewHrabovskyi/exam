@@ -39,15 +39,10 @@ pipeline
 			}
 			steps
 			{
-				sh 'pip install --no-cache-dir -r ./requirements.txt'
 				sh 'python3 test.py'
 			}
 			post
 			{
-				always
-				{
-					junit 'test-reports/*.xml'
-				}
 				success
 				{
 					echo "Application testing successfully completed "
