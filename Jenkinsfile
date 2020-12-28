@@ -70,7 +70,7 @@ pipeline
                 echo "Application Publishing"
                 checkout scm
                 script {
-                    def customImage = docker.build("aliklike/exam:${env.BUILD_ID}")
+                    def customImage = docker.build("andrewgrab22/exam:${env.BUILD_ID}")
                     docker.withRegistry('',registryCredential )
                     {
                         customImage.push()}
