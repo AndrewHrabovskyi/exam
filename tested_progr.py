@@ -7,9 +7,7 @@ def main(n):
     return r
 
 if __name__ == '__main__':
-    print(main(1))
-    print(main(3))
-    print(main(5))
-    print(main(2.2))
-    print(main([5,4]))
-    print(main("aaaa"))
+    print(main(2))
+    print(main(4))
+    print(main(7))
+    print(main(9))
