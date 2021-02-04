@@ -9,6 +9,6 @@ def main(n):
 if __name__ == '__main__':
     print(main(2))
     print(main(4))
-    print(main(7))
-    print(main(9))
+    print(main(6))
+    print(main(10))
     print("Hello")
